@@ -1,7 +1,6 @@
 # Buku Kerja Praktik
 Buku Kerja Praktik ini ditulis menggunakan LaTeX.
 
----
 ## Definisi
 LaTeX adalah bahasa markup dokumen atau sistem penyiapan teks untuk membuat sebuah dokumen. LaTeX memungkinkan penggunanya melakukan *typesetting* dan mencetak hasil kerjanya dalam bentuk tipografi yang baik. LaTeX sangat cocok digunakan untuk membuat dokumen yang membutuhkan banyak pemformatan, seperti artikel ilmiah atau teknis, *paper*, laporan, tugas akhir, buku yang mengandung banyak rumus matematika atau *script* dan *code* program, serta skripsi, *thesis*, dan disertasi.
 
@@ -20,7 +19,6 @@ LaTeX adalah bahasa markup dokumen atau sistem penyiapan teks untuk membuat sebu
 * Jika dokumennya pendek, terlalu berlebihan jika menggunakan LaTeX 
 * Harus hafal *command* supaya lebih cepat dalam mengetik
 
----
 ## Instalasi
 
 1. Buka terminal
