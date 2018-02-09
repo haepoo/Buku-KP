@@ -23,17 +23,17 @@ LaTeX adalah bahasa markup dokumen atau sistem penyiapan teks untuk membuat sebu
 1. Buka terminal
 2. Install Tex Live
 ```
-$ sudo apt-get update
-$ sudo apt-get install texlive-full
+sudo apt-get update
+sudo apt-get install texlive-full
 ```
 3. Install Tex Studio
 ```
-$ sudo apt-get install texstudio
+sudo apt-get install texstudio
 ```
 4. Install Windows Fonts
 ```
-$ sudo apt-get install ttf-mscorefonts-installer
-$ sudo fc-cache -f -v
+sudo apt-get install ttf-mscorefonts-installer
+sudo fc-cache -f -v
 ```
 5. Buka Tex Studio yang telah terinstall
 6. Buka menu `Option`, pilih `Configure Texstudio...`
@@ -41,7 +41,7 @@ $ sudo fc-cache -f -v
 8. Pada tab `command`, tuliskan `xelatex -synctex=1 -interaction=nonstopmode --shell-escape %.tex` sebagai *xelatex command*
 9. Install python-pygments
 ```
-$ sudo apt-get install python-pygments
+sudo apt-get install python-pygments
 ```
 10. Gunakan `build & view` atau F5 untuk meng-*compile*
 
@@ -50,5 +50,5 @@ Selamat membaca buku KP kami!
 ## Catatan
 Jika terjadi error pada *numbering*, jalankan *command*:
 ```
-$ sudo wget http://mirrors.ctan.org/macros/latex/contrib/titlesec/titlesec.sty -O /usr/share/texlive/texmf-dist/tex/latex/titlesec/titlesec.sty
+sudo wget http://mirrors.ctan.org/macros/latex/contrib/titlesec/titlesec.sty -O /usr/share/texlive/texmf-dist/tex/latex/titlesec/titlesec.sty
 ```
