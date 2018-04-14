@@ -24,15 +24,18 @@ LaTeX adalah bahasa markup dokumen atau sistem penyiapan teks untuk membuat sebu
 ## Instalasi
 1. Buka terminal
 2. Install Tex Live
+
     ```
     sudo apt-get update
     sudo apt-get install texlive-full
     ```
 3. Install Tex Studio
+
     ```
     sudo apt-get install texstudio
     ```
 4. Install Windows Fonts
+
     ```
     sudo apt-get install ttf-mscorefonts-installer
     sudo fc-cache -f -v
@@ -42,6 +45,7 @@ LaTeX adalah bahasa markup dokumen atau sistem penyiapan teks untuk membuat sebu
 7. Pada tab `build`, pilih `xelatex` sebagai *default compiler*
 8. Pada tab `command`, tuliskan `xelatex -synctex=1 -interaction=nonstopmode --shell-escape %.tex` sebagai *xelatex command*
 9. Install python-pygments
+
     ```
     sudo apt-get install python-pygments
     ```
@@ -49,6 +53,7 @@ LaTeX adalah bahasa markup dokumen atau sistem penyiapan teks untuk membuat sebu
 
 ## Catatan
 Jika terjadi error pada *numbering*, jalankan *command*:
+
 ```
 sudo wget http://mirrors.ctan.org/macros/latex/contrib/titlesec/titlesec.sty -O /usr/share/texlive/texmf-dist/tex/latex/titlesec/titlesec.sty
 ```
