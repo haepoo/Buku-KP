@@ -25,18 +25,18 @@ LaTeX adalah bahasa markup dokumen atau sistem penyiapan teks untuk membuat sebu
 1. Buka terminal
 2. Install Tex Live
 
-    ```
+    ```bash
     sudo apt-get update
     sudo apt-get install texlive-full
     ```
 3. Install Tex Studio
 
-    ```
+    ```bash
     sudo apt-get install texstudio
     ```
 4. Install Windows Fonts
 
-    ```
+    ```bash
     sudo apt-get install ttf-mscorefonts-installer
     sudo fc-cache -f -v
     ```
