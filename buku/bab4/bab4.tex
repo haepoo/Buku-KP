@@ -7,14 +7,33 @@
 
 \subsection{Fungsi Produk}
 \tab Sistem "EasyMeeting" ini mempunyai beberapa fungsi utama, yakni:
+\begin{enumerate}
+	\item Dapat menyalakan dan mematikan lampu
+	\item Dapat menyalakan dan mematikan AC
+	\item Dapat menampilkan status kondisi lampu dan AC
+\end{enumerate}
 
 \subsection{Karakteristik Pengguna}
-\subsection{Batasan}
+\indent Karakteristik pengguna dijabarkan dalam tabel berikut ini:
+
+\begin{center}
+\begin{tabular}{ | m{2cm} | m{3cm} | m{2cm} | m{3cm} | }
+\hline
+Kategori Pengguna& Tugas& Hak Akses ke Aplikasi& Kemampuan yang Harus Dimiliki \\
+\hline
+
+
+\end{tabular}
+\end{center}
+
+
 \subsection{Lingkungan Operasi}
 \section{Deskripsi Umum Kebutuhan}
 \subsection{Kebutuhan Antarmuka Eksternal}
 \subsubsection{Antarmuka Pengguna}
+\tab Sistem "EasyMeeting" merupakan sistem berbasis \textit{Internet of Things} yang menggunakan antarmuka berbasis HTTP yang dibangun  menggunakan Telegram Bot API.
 \subsubsection{Antarmuka Perangat Keras}
+\tab Sistem "EasyMeeting" merupakan sistem berbasis \textit{Internet of Things} yang terhubung dengan Lampu dan sensor suhu
 \subsubsection{Antarmuka Perangkat Lunak}
 \subsubsection{Antarmuka Komunikasi}
 \subsection{Kebutuhan Fungsional}
@@ -26,10 +45,22 @@
 \subsubsection{Kebutuhan Non Fungsional}
 \section{Deskripsi Perancangan Global (Arsitektural)}
 \subsection{Rancangan Lingkungan Implementasi}
+\tab Sistem "EasyMeeting" akan dikembangkan menjadi sistem berbasis \textit{Internet of Things} yang membutuhkan:
+	\begin{tabular}{lll}
+		\tabitem Sistem Operasi	&: &Windows/ Linux \\
+		\tabitem Server &: &WSO2 IoT Server \\
+		\tabitem DBMS &: &H2 / SQLite \\
+		\tabitem Development Tools &: &Arduino IDE, Telegram, Github, \\
+		&&Internet Browser (Google Chrome/ \\ 
+		&&Mozilla Firefox), StarUML \\
+		\tabitem Bahasa Pemrograman &: &C  \\
+	\end{tabular}
+
 \subsection{Arsitektur Sistem}
+\tab skip sek
 \subsection{Deskripsi Persistensi Objek (Basis Data)}
 \subsubsection{\textit{Physical Data Model}}
-
+\tab 
 
 \section{Mengelola Request Relokasi}
 Berikut adalah deskripsi sistem dan diagram aktivitas pada \textit{use case} Mengelola Request Relokasi. 
