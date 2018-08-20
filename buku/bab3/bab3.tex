@@ -4,16 +4,15 @@
 \tab IoT adalah signifikan, karena sebuah objek dapat merepresentasikan dirinya secara digital menjadi sesuatu yang lebih besar dari objek itu sendiri. Objek tidak hanya bisa berhubungan dengan pengguna, namun objek dapat terhubung dengan objek lain disekitarnya dan dengan basis data. Ketika banyak objek bekerja bersama-sama sebagai satu kesatuan, maka mereka memiliki kecerdasan yang disebut \textit{"ambient intelligence"}.\\
 \tab \textit{Internet of Things} adalah konsep yang sulit didefinisikan secara tepat sebab penelitian pada IoT masih dalam tahap perkembangan. Bahkan ada banyak kelompok yang berbeda yang telah mendefinisikan istilah tersebut, meski penggunaan awal istilah ini dikaitkan dengan Kevin Ashton, seorang pakar inovasi digital. Ada sebuah pernyataan Ashton (1999) yang dikutip dari sebuah artikel di \textit{RFID Journal}:\\
 \tab \textit{"Jika kita memiliki komputer yang tahu segalanya yang harus diketahui dari berbagai benda \textit{(things)} – menggunakan data yang mereka kumpulkan sendiri tanpa bantuan dari kita – kita bisa melacak dan menghitung semuanya, serta sangat mengurangi pemborosan, kerugian, dan biaya. Kita bisa tahu kapan suatu benda perlu diganti dan diperbaiki, atau kapan benda-benda itu masih dalam kondisi baik."}\\
-\tab IoT menggambarkan sebuah dunia dimana hampir semua hal dapat terhubung dan berkomunikasi. Dengan kata lain, dengan \textit{Internet of Things}, dunia akan menjadi satu kesatuan sistem informasi yang sangat besar. \textit{Internet of Things} memiliki potensi untuk mengubah dunia seperti pernah dilakukan oleh internet, bahkan mungkin lebih baik (Ashton, 2009). 
+\tab IoT menggambarkan sebuah dunia dimana hampir semua hal dapat terhubung dan berkomunikasi. Dengan kata lain, dengan \textit{Internet of Things}, dunia akan menjadi satu kesatuan sistem informasi yang sangat besar. \textit{Internet of Things} memiliki potensi untuk mengubah dunia seperti pernah dilakukan oleh internet, bahkan mungkin lebih baik (Ashton, 2009).
 
-\section{Mikrokontroler}
-\subsection{Modul Ultrasonic}
+\section{Komponen Mikrokontroler}
 
-\section{NodeMCU}
+\subsection{NodeMCU}
 \tab NodeMCU adalah sebuah \textit{platform} IoT yang bersifat \textit{opensource}, terdiri dari perangkat keras berupa \textit{System On Chip} ESP8266 dan \textit{firmware} yang menggunakan bahasa pemrograman \textit{scripting} Lua (eLua). ESP8266 adalah nama mikrokontroler yang dirancang oleh \textit{Espressif Systems}, merupakan sebuah solusi jaringan WiFi yang menjembatani antara mikrokontroler yang sudah ada supaya bisa terhubung dengan WiFi dan juga dapat menjalankan aplikasi secara mandiri. Istilah "NodeMCU" secara \textit{default} sebenarnya mengacu pada \textit{firmware} yang digunakan, bukan pada perangkat keras \textit{development kit}.\\
 \tab NodeMCU bisa dianalogikan sebagai \textit{board} arduino-nya ESP8266. NodeMCU telah mem-\textit{package} ESP8266 ke dalam sebuah \textit{board} yang kompak dengan berbagai fitur layaknya mikrokontroler dan kapabilitas akses terhadap Wifi, juga \textit{chip} komunikasi \textit{USB to serial}. Sehingga untuk memprogramnya hanya diperlukan ekstensi kabel data USB persis yang digunakan sebagai kabel data dan kabel \textit{charging smartphone} Android.
 
-\subsection{Spesifikasi}
+\subsubsection{Spesifikasi}
 \begin{tabular}{ll}
 	\tab \textit{Voltag}e &: 3.3V\\
 	\tab GPIOs &: 17 \textit{(multiplexed with other functions)}\\
@@ -30,30 +29,38 @@
 	\tab \textit{Analog to Digital} &: 1 \textit{input with} 1024 \textit{step resolution}\\
 \end{tabular}
 	
-\subsection{Skematik Posisi Pin}
+\subsubsection{Skematik Posisi Pin}
 
-
-\section{Arduino IDE}
-
-
-
-
-
+\subsection{Sensor Suhu dan Kelembaban DHT11}
+\subsection{Breadboard}
+\subsection{Resistor}
+\subsection{Jumper}
+\subsection{LED Light Bulb}
+\subsection{Infrared Sensor Receiver Module}
+\subsection{Infrared Sensor Module}
 
 \section{Telegram}
-\tab Telegram adalah sebuah aplikasi \textit{messaging} yang fokus pada kecepatan dan keamanan, sederhana, ringan, dan juga gratis. Telegram dapat digunakan di semua perangkat pada waktu yang bersamaan dan pesan akan tersinkron dengan baik. \textit{Instant Messaging} (IM) Telegram yang diluncurkan pada Agustus tahun 2013, menjadi salah satu aplikasi IM yang banyak digunakan oleh masyarakat di seluruh dunia. Kelebihan
-IM Telegram salah satunya adalah adanya landasan untuk
-menggunakan \textit{Application Programming Interface} (API) untuk
+\tab Telegram adalah sebuah aplikasi \textit{messaging} yang fokus pada kecepatan dan keamanan, sederhana, ringan, dan juga gratis. Telegram yang diluncurkan pada Agustus tahun 2013, menjadi salah satu aplikasi \textit{instant messaging} yang banyak digunakan oleh masyarakat di seluruh dunia. Kelebihan Telegram salah satunya adalah adanya landasan untuk menggunakan \textit{Application Programming Interface} (API) untuk
 masyarakat luas.
 
-\subsection{Telegram APIs}
-\tab Telegram menyediakan 2 jenis API yang dapat dikembangkan. API yang pertama adalah Telegram API, yakni API yang memungkinkan siapa saja membuat klien Telegram mereka sendiri sesuai dengan keinginan. Telegram adalah aplikasi yang \textit{open source} karena \textit{source code}-nya disebarluaskan secara luas dan gratis untuk dipelajari dan dibuka 100\% untuk para pengembang yang ingin membuat aplikasi Telegram menggunakan platform mereka. \\
-\tab API yang kedua adalah Bot API, yakni API yang memungkinkan siapa saja dengan mudah membuat sebuah program yang menggunakan aplikasi perpesanan Telegram sebagai antarmuka. Bot API memungkinkan siapa saja untuk membuat bot (kependekan dari robot) yang dapat membalas dan melayani semua pengguna yang mengirimkan suatu pesan perintah kepada bot tersebut.
 \subsection{Telegram Bot API}
-\tab Bot adalah aplikasi pihak ketiga yang dijalankan di dalam Telegram dan dioperasikan oleh perangkat lunak, bukan manusia. Bot dapat melakukan apa saja, seperti mengajar, mencari, \textit{broadcast}, mengingatkan, menghubungkan, dan mengintegrasikan dengan layanan lainnya atau bahkan memberikan perintah ke \textit{Internet of Things}.\\
-\tab Pengguna dapat berinteraksi dengan bot dengan mengirimkan pesan, perintah, dan permintaan. Sedangkan pengembang dapat mengontrol bot yang sedang dikembangkannya melalui \textit{HTTPS Requests} ke bot API Telegram. 
+\tab Telegram menyediakan dua jenis API yang dapat dikembangkan, yakni  Telegram API dan Bot API. Telegram API adalah API yang memungkinkan siapa saja membuat klien Telegram mereka sendiri sesuai dengan keinginan. Telegram adalah aplikasi yang \textit{open source} karena \textit{source code}-nya disebarluaskan secara luas dan gratis untuk dipelajari dan dibuka 100\% untuk para pengembang yang ingin membuat aplikasi Telegram menggunakan \textit{platform} mereka. \\
+\tab Bot API adalah API yang memungkinkan siapa saja dengan mudah membuat sebuah program yang menggunakan aplikasi Telegram sebagai antarmuka. Bot API memungkinkan siapa saja untuk membuat bot (kependekan dari robot) yang dapat membalas dan melayani semua pengguna yang mengirimkan suatu pesan perintah kepada bot tersebut. \\
+\tab Bot adalah aplikasi pihak ketiga yang dijalankan di dalam Telegram dan dioperasikan oleh perangkat lunak, bukan manusia. Bot dapat melakukan apa saja, seperti mengajari, mencari, \textit{broadcast}, mengingatkan, menghubungkan, dan mengintegrasikan dengan layanan lainnya atau bahkan dapat memberikan perintah ke \textit{Internet of Things}.\\
+\tab Pengguna dapat berinteraksi dengan bot dengan mengirimkan pesan, perintah, dan permintaan. Sedangkan pengembang dapat mengontrol bot yang sedang dikembangkannya melalui \textit{HTTPS Requests} ke bot API Telegram.
 
-\section{WSO2}
-\subsection{WSO2 IoT Server}
+\section{Pemrograman Mikrokontroler}
+\tab Ada banyak sekali bahasa pemrograman yang dapat digunakan untuk memprogram suatu mikrokontroler, seperti BASIC, C/C++, atau Assembly (ASM). Arduino sendiri memiliki sebuah perangkat pemrograman bernama Arduino IDE yang dapat digunakan untuk membuat program menggunakan bahasa C yang memang sudah dirancang khusus untuk Arduino. Selain memprogram papan Arduino-nya, kita juga harus memprogram pengendali Arduino-nya menggunakan bahasa pemrograman Python. 
+
+\subsection{Bahasa Pemrograman C dan Python}
+\tab Bahasa pemrograman C adalah bahasa pemrograman tingkat menengah yang bisa digunakan untuk membuat berbagai jenis aplikasi, mulai dari sistem operasi hingga \textit{compiler} untuk bahasa pemrograman lain. Bahasa pemrograman yang dibuat oleh Dennis M. Ritchie pada tahun 1972 ini paling cocok digunakan untuk membangun aplikasi yang berhubungan langsung dengan sistem operasi dan \textit{hardware}. Bahasa pemrograman C inilah yang digunakan untuk memprogram papan Arduino.\\
+\tab Bahasa pemrograman Python adalah bahasa pemrograman tingkat tinggi yang dibuat oleh Guido van Rossum. Python diklaim sebagai bahasa yang menggabungkan kapabilitas, kemampuan, dan sintaksis kode yang sangat jelas dan mudah dibaca manusia sehingga mudah untuk dipelajari. Python mendukung multi-paradigma pemrograman, yakni pemrograman berbasis objek, pemrograman imperatif, dan pemrograman fungsional. Bahasa pemrograman Python banyak dipilih untuk digunakan dalam memprogram pengendalian Arduino karena ada banyak \textit{library} yang mendukung, seperti PySerial.
+
+\subsection{Arduino IDE}
+\tab Arduino IDE atau Arduino \textit{Software} (IDE) adalah sebuah \textit{software open-source} yang memungkinkan pengembang untuk menulis kode program dan mengunggahnya ke papan Arduino. Unit kode yang diunggah dan dijalankan di papan Arduino biasa disebut dengan Sketsa atau \textit{Sketch}. Arduino IDE dapat berjalan di sistem operasi Windows, Linux, maupun Mac OS X dan dapat digunakan bersama papan Arduino jenis apapun. 
+
+\section{WSO2 IoT Server}
+\tab WSO2 adalah sebuah teknologi \textit{open-source} untuk bisnis digital yang menyediakan layanan integrasi yang tangkas (\textit{agile}). Ada 3 macam layanan yang ditawarkan, yakni WSO2 \textit{Integration Agile Platform}, \textit{Architecture for Agility}, dan \textit{Methodology for Agility}. Diantara banyak produk yang ditawarkan oleh WSO2, ada salah satu \textit{platform} yang berkaitan dengan \textit{Internet of Things} bernama WSO2 \textit{IoT Server}. WSO2 \textit{IoT Server} (IoTS) menyediakan kapabilitas yang diperlukan untuk mengimplementasikan \textit{platform} IoT di sisi server yang \textit{scalable}.\\
+\tab Saat ini, Telkom sedang mengembangkan WSO2 \textit{IoT Server} dan produk-produk WSO2 yang lain yang harus diuji coba. Oleh karena itu, kami mengembangkan sistem berbasis \textit{Internet of Things} yang bernama "EasyMeeting".
 
 \cleardoublepage

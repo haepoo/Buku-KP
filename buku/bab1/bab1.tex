@@ -41,50 +41,50 @@
 \begin{enumerate}
 	\item \textbf{Perumusan Masalah}\\
 	\tab Tahap pertama adalah merumuskan masalah. Untuk mengetahui permasalahan apa yang harus diselesaikan, diberikan penjelasan mengenai alasan mengapa sistem ini dibutuhkan. Dijelaskan pula secara rinci mengenai bagaimana alur sistem itu akan berjalan. Penjelasan yang diberikan oleh pembimbing kerja praktik menghasilkan beberapa catatan mengenai gambaran cara kerja sistem dan rincian kebutuhan sistem \textit{Internet of Things}. Setelah mendapatkan gambaran sistem, diskusi lebih lanjut dilakukan guna menentukan komponen-komponen \textit{microcontroller} yang dibutuhkan, bahasa pemrograman, dan \textit{platform} yang dipakai dalam pembuatan sistem.\\
+	
 	\item \textbf{Studi Literatur}\\
 	\tab Setelah ditentukannya komponen-komponen \textit{microcontroller} yang dibutuhkan, bahasa pemrograman, dan \textit{platform} yang dipakai dalam pembuatan sistem, maka pada tahap ini dilakukan proses pencarian, pembelajaran, pengumpulan
 	dan pemahaman informasi serta studi literatur lebih lanjut mengenai cara implementasinya dalam membangun sistem sesuai yang dibutuhkan.\\
 	\tab Secara garis besar, untuk membuat \namaSistem digunakan beberapa komponen \textit{microcontroller}, yaitu nodeMCU, sensor suhu dan \textit{infrared}, serta \textit{jumper wires}, bahasa pemrograman C++, platform Telegram Bot API dan WSO2 IoT Server, serta DBMS H2 atau SQLite sebagai penyimpanan data pegawai Telkom.\\
+	
 	\item \textbf{Analisis dan Perancangan Sistem}\\
-	\tab Pada tahap ini akan dijelaskan tentang analisis serta perancangan sistem yang akan dibangun oleh penulis.\\
+	\tab Pada tahap ini akan dijelaskan tentang analisis serta perancangan sistem yang akan dibangun oleh penulis, berdasarkan studi literatur dan pembelajaran konsep teknologi dari perangkat lunak yang sudah ada.\\
+	\tab Fungsi dari sistem \textit{Internet of Things} yang akan dibuat adalah untuk meningkatkan efisiensi persiapan ruang rapat, meliputi menyalakan dan mematikan lampu dan AC (\textit{Air Conditioner}), menyesuaikan suhu ruangan, serta menampilkan status ruangan. Sistem IoT dikendalikan melalui aplikasi Telegram, dengan memanfaatkan Telegram Bot API. Sistem IoT hanya bisa dikendalikan oleh pegawai internal Telkom saja, sehingga sistem ini juga dilengkapi dengan \textit{user authentication} dan \textit{database} pegawai Telkom.\\
+	
 	\item \textbf{Implementasi Sistem}\\
-	\tab Implementasi merupakan tahap pembangunan rancangan. Pada tahap ini merealisasikan apa yang terjadi pada tahap sebelumnya, sehingga sesuai dengan apa yang telah direncanakan.\\
+	\tab Implementasi merupakan tahap pembangunan rancangan. Pada tahap ini, penulis merealisasikan sesuai dengan analisis dan perancangan sistem yang telah dilakukan pada tahap sebelumnya.\\
+	\tab Setidaknya ada empat pekerjaan utama yang dilakukan, yaitu desain antarmuka pengguna, yakni memanfaatkan Telegram Bot API; desain antarmuka perangkat keras, yakni merangkai komponen-komponen \textit{microcontroller} yang dibutuhkan, meliputi NodeMCU, sensor suhu dan \textit{infrared}, serta \textit{jumper wires}; desain fungsi-fungsi yang bekerja dalam sistem (\textit{back-end}), yakni menggunakan bahasa C/C++ dan Arduino IDE; dan desain \textit{database}. Pembangunan sistem dilakukan selama satu bulan.\\ 
+	
 	\item \textbf{Pengujian dan Evaluasi}\\
-	\tab Pada tahap ini dilakukan uji coba pada aplikasi yang telah diimplementasikan. Tahap ini bermaksud untuk mengevaluasi kesesuaian sistem dan aplikasi yang dibuat apakah dapat dilakukan dengan lancar atau tidak. Selain itu juga untuk mencari masalah yang mungkin timbul dan tidak lupa mengadakan perbaikan jika terdapat kesalahan.\\
+	\tab Pada tahap ini dilakukan uji coba pada sistem yang telah dibangun. Tahap ini dimaksudkan untuk menguji dan mengevaluasi fitur-fitur dalam sistem yang telah dibuat, apakah berjalan dengan baik dan sesuai dengan kebutuhan atau tidak. Kesesuaian sistem dengan kebutuhan akan menentukan keberhasilan dalam pengujian. Selain itu, pengujian dan evaluasi juga dimaksudkan untuk mencari masalah yang mungkin timbul, serta mencari solusi untuk membuat sistem menjadi lebih baik.\\
+	
 	\item \textbf{Kesimpulan dan Saran}\\
-	\tab Pengujian yang dilakukan ini telah memenuhi syarat yang diinginkan, dan berjalan dengan baik dan lancar.
+	\tab Pada tahap ini dilakukan penarikan kesimpulan berdasarkan hasil implementasi dan pengujian sistem, serta diberikan saran terkait dengan hasil evaluasi untuk mengembangkan sistem menjadi lebih baik lagi.
 \end{enumerate}
 
 \section{Sistematika Laporan}
-Laporan Kerja Praktik ini terbagi menjadi 7 bab dengan rincian sebagai berikut:
-	\begin{enumerate}
-	\item BAB I: PENDAHULUAN
+\tab Laporan kerja praktik ini terdiri dari tujuh bab dengan rincian sebagai berikut:
+\begin{enumerate}
+	\item \textbf{Bab I: Pendahuluan}\\
+	\tab Bab ini memaparkan mengenai garis besar kerja praktik yang meliputi latar belakang, tujuan, manfaat, rumusan masalah, lokasi dan waktu kerja praktik, metodologi dan sistematika laporan.\\
+		
+	\item \textbf{Bab II: Profil Perusahaan}\\
+	\tab Bab ini berisi gambaran umum profil perusahaan tempat pelaksanaan kerja praktik, yakni PT Telekomunikasi Indonesia (Persero) Tbk (Telkom), mulai dari visi dan misi perusahaan, portofolio bisnis perusahaan, sejarah perusahaan, hingga divisi tempat kerja praktik dilakukan, yakni divisi \textit{Information Technology} (IT).\\
+		
+	\item \textbf{Bab III: Tinjauan Pustaka}\\
+	\tab Bab ini berisi penjelasan tentang istilah-istilah atau dasar teori dari metode atau teknologi yang digunakan dalam menyelesaikan proyek kerja praktik.\\
+		
+	\item \textbf{Bab IV: Analisis dan Perancangan Sistem}\\
+	\tab Pada bab ini dijelaskan mengenai analisis terhadap sistem dan pemaparan mengenai kebutuhan untuk perancangan sistem yang akan dibangun dan dikembangkan.\\
 	
-	Bab ini berisi latar belakang, tujuan, manfaat, rumusan masalah, lokasi dan waktu kerja praktik, metodologi dan sistematika laporan.
+	\item \textbf{Bab V: Implementasi Sistem}\\
+	\tab Bab ini berisi uraian tahap-tahap implementasi sistem.\\
 		
-	\item BAB II: PROFIL PERUSAHAAN
-		
-	Bab ini berisi gambaran umum PT Bank Rakyat Indonesia, mulai dari sejarah, tujuan, visi dan misi perusahaan, dan divisi tempat kerja praktik dilakukan.
-		
-	\item BAB III: TINJAUAN PUSTAKA
-		
-	Bab ini berisi dasar teori dari metode/teknologi yang digunakan dalam menyelesaikan proyek kerja praktik.
-		
-	\item BAB IV: ANALISIS DAN PERANCANGAN SISTEM
-		
-	Bab ini dijelaskan mengenai desain antarmuka aplikasi.
-		
-	\item BAB V: IMPLEMENTASI SISTEM
-		
-	Bab ini berisi uraian tahap-tahap yang dilakukan untuk proses implementasi aplikasi.
-		
-	\item BAB VI: HASIL DAN UJI COBA
+	\item \textbf{Bab VI: Pengujian dan Evaluasi}\\
+	\tab Bab ini berisi hasil uji coba dan evaluasi dari sistem yang telah dikembangkan selama pelaksanaan kerja praktik.\\
 	
-	Bab ini berisi hasil uji coba dan evaluasi dari perangkat lunak yang telah dikembangkan selama pelaksanaan kerja praktik.
-	
-	\item KESIMPULAN DAN SARAN
-	
-	Bab ini berisi kesimpulan dan saran yang didapat dari proses pelaksanaan kerja praktik.
-	\end{enumerate}
+	\item \textbf{Bab VII: Kesimpulan dan Saran}\\	
+	\tab Bab ini berisi kesimpulan dan saran yang didapat dari proses pelaksanaan kerja praktik.\\
+\end{enumerate}
 
 \cleardoublepage
