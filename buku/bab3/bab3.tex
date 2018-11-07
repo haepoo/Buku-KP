@@ -6,11 +6,11 @@
 \tab \textit{"Jika kita memiliki komputer yang tahu segalanya yang harus diketahui dari berbagai benda \textit{(things)} – menggunakan data yang mereka kumpulkan sendiri tanpa bantuan dari kita – kita bisa melacak dan menghitung semuanya, serta sangat mengurangi pemborosan, kerugian, dan biaya. Kita bisa tahu kapan suatu benda perlu diganti dan diperbaiki, atau kapan benda-benda itu masih dalam kondisi baik."}\\
 \tab IoT menggambarkan sebuah dunia dimana hampir semua hal dapat terhubung dan berkomunikasi. Dengan kata lain, dengan \textit{Internet of Things}, dunia akan menjadi satu kesatuan sistem informasi yang sangat besar. \textit{Internet of Things} memiliki potensi untuk mengubah dunia seperti pernah dilakukan oleh internet, bahkan mungkin lebih baik (Ashton, 2009).
 
-\section{Komponen Mikrokontroler}
+\section{Komponen Mikrokontroller}
 
 \subsection{NodeMCU}
-\tab NodeMCU adalah sebuah \textit{platform} IoT yang bersifat \textit{opensource}, terdiri dari perangkat keras berupa \textit{System On Chip} ESP8266 dan \textit{firmware} yang menggunakan bahasa pemrograman \textit{scripting} Lua (eLua). ESP8266 adalah nama mikrokontroler yang dirancang oleh \textit{Espressif Systems}, merupakan sebuah solusi jaringan WiFi yang menjembatani antara mikrokontroler yang sudah ada supaya bisa terhubung dengan WiFi dan juga dapat menjalankan aplikasi secara mandiri. Istilah "NodeMCU" secara \textit{default} sebenarnya mengacu pada \textit{firmware} yang digunakan, bukan pada perangkat keras \textit{development kit}.\\
-\tab NodeMCU bisa dianalogikan sebagai \textit{board} arduino-nya ESP8266. NodeMCU telah mem-\textit{package} ESP8266 ke dalam sebuah \textit{board} yang kompak dengan berbagai fitur layaknya mikrokontroler dan kapabilitas akses terhadap Wifi, juga \textit{chip} komunikasi \textit{USB to serial}. Sehingga untuk memprogramnya hanya diperlukan ekstensi kabel data USB persis yang digunakan sebagai kabel data dan kabel \textit{charging smartphone} Android.
+\tab NodeMCU adalah sebuah \textit{platform} IoT yang bersifat \textit{opensource}, terdiri dari perangkat keras berupa \textit{System On Chip} ESP8266 dan \textit{firmware} yang menggunakan bahasa pemrograman \textit{scripting} Lua (eLua). ESP8266 adalah nama mikrokontroller yang dirancang oleh \textit{Espressif Systems}, merupakan sebuah solusi jaringan WiFi yang menjembatani antara mikrokontroller yang sudah ada supaya bisa terhubung dengan WiFi dan juga dapat menjalankan aplikasi secara mandiri. Istilah "NodeMCU" secara \textit{default} sebenarnya mengacu pada \textit{firmware} yang digunakan, bukan pada perangkat keras \textit{development kit}.\\
+\tab NodeMCU bisa dianalogikan sebagai \textit{board} arduino-nya ESP8266. NodeMCU telah mem-\textit{package} ESP8266 ke dalam sebuah \textit{board} yang kompak dengan berbagai fitur layaknya mikrokontroller dan kapabilitas akses terhadap Wifi, juga \textit{chip} komunikasi \textit{USB to serial}. Sehingga untuk memprogramnya hanya diperlukan ekstensi kabel data USB persis yang digunakan sebagai kabel data dan kabel \textit{charging smartphone} Android.
 
 \subsubsection{Spesifikasi}
 \begin{tabular}{ll}
@@ -31,12 +31,54 @@
 	
 \subsubsection{Skematik Posisi Pin}
 
-\subsection{Sensor Suhu dan Kelembaban DHT11}
+\subsection{DHT11}
+\tab DHT11 adalah salah satu sensor yang dapat mengukur dua parameter lingkungan sekaligus, yakni suhu dan kelembaban udara. Dalam sensor ini, terdapat sebuah \textit{thermistor} tipe NTC \textit{(Negative Temperature Coefficient)} untuk mengukur suhu, sebuah sensor kelembaban tipe resistif, dan sebuah mikrokontroller 8-bit yang mengolah kedua sensor tersebut dan mengirim hasilnya ke pin \textit{output} dengan format \textit{single-wire bi-directional} (kabel tunggal dua arah). Berikut adalah spesifikasi dari DHT11:\\
+\tab \textbf{Pengukuran Kelembaban Udara}
+\begin{itemize}
+	\item Resolusi pengukuran : 16 Bit
+	\item \textit{Repeatability} : \textpm1\% RH
+	\item Akurasi pengukuran :  25\textdegree{}C \textpm5\% RH
+	\item \textit{Interchangeability} : \textit{fully interchangeable}
+	\item Waktu respon : 1 / e (63\%) of 25\textdegree{}C 6 detik
+	\item Histeresis : <\textpm 0.3\% RH
+	\item \textit{Long-term stability}: <\textpm 0.5\% RH / yr in
+\end{itemize}
+\tab \textbf{Pengukuran Suhu}
+\begin{itemize}
+	\item Resolusi pengukuran : 16 Bit
+	\item \textit{Repeatability} : \textpm0.2\textdegree{}C
+	\item \textit{Range} : At 25\textdegree{}C \textpm2\textdegree{}C
+	\item Waktu respon : 1 / e (63\%) 10 detik
+\end{itemize}
+\tab \textbf{Karakteristik Elektrikal}
+\begin{itemize}
+	\item \textit{Power supply} : DC 3.5 – 5.5V
+	\item Konsumsi arus : \textit{measurement} 0.3mA, \textit{standby} 60μ A
+	\item Periode \textit{sampling} : lebih dari 2 detik
+\end{itemize}
+
+\textbf{Keterangan:}
+\begin{itemize}
+	\item Pin 1 : Vcc 3.5 – 5.5V DC
+	\item Pin 2 : DATA/serial data \textit{(single bus)}
+	\item Pin 3 : NC, \textit{not used}
+	\item Pin 4 : GND/\textit{ground}
+\end{itemize}
+
+
 \subsection{Breadboard}
+\tab Breadboard atau yang juga biasa disebut \textit{Project Board} adalah dasar konstruksi sebuah sirkuit elektronik untuk membuat prototipe dari suatu rangkaian elektronik. Breadboard banyak digunakan untuk membuat prototipe suatu rangkaian komponen elektronik karena dalam penggunaannya tidak memerlukan proses menyolder \textit{(solderless)} sehingga mudah digunakan. Breadboard dapat digunakan kembali dan sangat cocok digunakan untuk berkreasi dalam desain sirkuit elektronika. Secara umum, breadboard memiliki jalur seperti gambar berikut:\\
+
 \subsection{Resistor}
-\subsection{Jumper}
+\tab Resistor merupakan komponen elektronik yang memiliki dua pin dan didesain untuk mengatur tegangan dan arus listrik. Resistor mempunyai nilai resistansi (tahanan) tertentu yang dapat memproduksi tegangan listrik di antara kedua pin dimana nilai tegangan terhadap resistansi tersebut berbanding lurus dengan arus yang mengalir, berdasarkan persamaan hukum Ohm:\\
+\tab Resistor digunakan sebagai bagian dari rangkaian elektronik dan sirkuit elektronik, dan merupakan salah satu komponen yang paling sering digunakan. 
+
+\subsection{Jumper Wire}
+\tab Jumper Wire atau kabel Jumper adalah kabel yang memiliki konektor atau pin pada masing-masing ujungnya. Jumper Wire biasanya digunakan untuk menghubungkan antar komponen \textit{breadboard} atau dengan prototipe sirkuit elektronik lain. Sama seperti \textit{breadboard}, jumper wire dapat digunakan tanpa menyolder \textit{(solderless)}.
+ 
 \subsection{LED Light Bulb}
 \subsection{Infrared Sensor Receiver Module}
+
 \subsection{Infrared Sensor Module}
 
 \section{Telegram}
@@ -49,8 +91,8 @@ masyarakat luas.
 \tab Bot adalah aplikasi pihak ketiga yang dijalankan di dalam Telegram dan dioperasikan oleh perangkat lunak, bukan manusia. Bot dapat melakukan apa saja, seperti mengajari, mencari, \textit{broadcast}, mengingatkan, menghubungkan, dan mengintegrasikan dengan layanan lainnya atau bahkan dapat memberikan perintah ke \textit{Internet of Things}.\\
 \tab Pengguna dapat berinteraksi dengan bot dengan mengirimkan pesan, perintah, dan permintaan. Sedangkan pengembang dapat mengontrol bot yang sedang dikembangkannya melalui \textit{HTTPS Requests} ke bot API Telegram.
 
-\section{Pemrograman Mikrokontroler}
-\tab Ada banyak sekali bahasa pemrograman yang dapat digunakan untuk memprogram suatu mikrokontroler, seperti BASIC, C/C++, atau Assembly (ASM). Arduino sendiri memiliki sebuah perangkat pemrograman bernama Arduino IDE yang dapat digunakan untuk membuat program menggunakan bahasa C yang memang sudah dirancang khusus untuk Arduino. Selain memprogram papan Arduino-nya, kita juga harus memprogram pengendali Arduino-nya menggunakan bahasa pemrograman Python. 
+\section{Pemrograman Mikrokontroller}
+\tab Ada banyak sekali bahasa pemrograman yang dapat digunakan untuk memprogram suatu mikrokontroller, seperti BASIC, C/C++, atau Assembly (ASM). Arduino sendiri memiliki sebuah perangkat pemrograman bernama Arduino IDE yang dapat digunakan untuk membuat program menggunakan bahasa C yang memang sudah dirancang khusus untuk Arduino. Selain memprogram papan Arduino-nya, kita juga harus memprogram pengendali Arduino-nya menggunakan bahasa pemrograman Python. 
 
 \subsection{Bahasa Pemrograman C dan Python}
 \tab Bahasa pemrograman C adalah bahasa pemrograman tingkat menengah yang bisa digunakan untuk membuat berbagai jenis aplikasi, mulai dari sistem operasi hingga \textit{compiler} untuk bahasa pemrograman lain. Bahasa pemrograman yang dibuat oleh Dennis M. Ritchie pada tahun 1972 ini paling cocok digunakan untuk membangun aplikasi yang berhubungan langsung dengan sistem operasi dan \textit{hardware}. Bahasa pemrograman C inilah yang digunakan untuk memprogram papan Arduino.\\
