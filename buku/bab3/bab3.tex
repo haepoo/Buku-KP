@@ -6,11 +6,11 @@
 \tab \textit{"Jika kita memiliki komputer yang tahu segalanya yang harus diketahui dari berbagai benda \textit{(things)} – menggunakan data yang mereka kumpulkan sendiri tanpa bantuan dari kita – kita bisa melacak dan menghitung semuanya, serta sangat mengurangi pemborosan, kerugian, dan biaya. Kita bisa tahu kapan suatu benda perlu diganti dan diperbaiki, atau kapan benda-benda itu masih dalam kondisi baik."}\\
 \tab IoT menggambarkan sebuah dunia dimana hampir semua hal dapat terhubung dan berkomunikasi. Dengan kata lain, dengan \textit{Internet of Things}, dunia akan menjadi satu kesatuan sistem informasi yang sangat besar. \textit{Internet of Things} memiliki potensi untuk mengubah dunia seperti pernah dilakukan oleh internet, bahkan mungkin lebih baik (Ashton, 2009).
 
-\section{Komponen \textit{Microcontroller}}
+\section{Komponen Mikrokontroler}
 
 \subsection{NodeMCU}
-\tab NodeMCU adalah sebuah \textit{platform} IoT yang bersifat \textit{opensource}, terdiri dari perangkat keras berupa \textit{System On Chip} ESP8266 dan \textit{firmware} yang menggunakan bahasa pemrograman \textit{scripting} Lua (eLua). ESP8266 adalah nama \textit{microcontroller} yang dirancang oleh \textit{Espressif Systems}, merupakan sebuah solusi jaringan WiFi yang menjembatani antara \textit{microcontroller} yang sudah ada supaya bisa terhubung dengan WiFi dan juga dapat menjalankan aplikasi secara mandiri. Istilah "NodeMCU" secara \textit{default} sebenarnya mengacu pada \textit{firmware} yang digunakan, bukan pada perangkat keras \textit{development kit}.\\
-\tab NodeMCU bisa dianalogikan sebagai \textit{board} arduino-nya ESP8266. NodeMCU telah mem-\textit{package} ESP8266 ke dalam sebuah \textit{board} yang kompak dengan berbagai fitur layaknya \textit{microcontroller} dan kapabilitas akses terhadap Wifi, juga \textit{chip} komunikasi \textit{USB to serial}. Sehingga untuk memprogramnya hanya diperlukan ekstensi kabel data USB persis yang digunakan sebagai kabel data dan kabel \textit{charging smartphone} Android. NodeMCU memiliki skematik posisi pin seperti pada gambar \ref{figure:pinout-nodemcu}.
+\tab NodeMCU adalah sebuah \textit{platform} IoT yang bersifat \textit{opensource}, terdiri dari perangkat keras berupa \textit{System On Chip} ESP8266 dan \textit{firmware} yang menggunakan bahasa pemrograman \textit{scripting} Lua (eLua). ESP8266 adalah nama mikrokontroler yang dirancang oleh \textit{Espressif Systems}, merupakan sebuah solusi jaringan WiFi yang menjembatani antara mikrokontroler yang sudah ada supaya bisa terhubung dengan WiFi dan juga dapat menjalankan aplikasi secara mandiri. Istilah "NodeMCU" secara \textit{default} sebenarnya mengacu pada \textit{firmware} yang digunakan, bukan pada perangkat keras \textit{development kit}.\\
+\tab NodeMCU bisa dianalogikan sebagai \textit{board} arduino-nya ESP8266. NodeMCU telah mem-\textit{package} ESP8266 ke dalam sebuah \textit{board} yang kompak dengan berbagai fitur layaknya mikrokontroler dan kapabilitas akses terhadap Wifi, juga \textit{chip} komunikasi \textit{USB to serial}. Sehingga untuk memprogramnya hanya diperlukan ekstensi kabel data USB persis yang digunakan sebagai kabel data dan kabel \textit{charging smartphone} Android. NodeMCU memiliki skematik posisi pin seperti pada gambar \ref{figure:pinout-nodemcu}.
 
 \begin{figure}[H]
 	\centerline {
@@ -21,7 +21,7 @@
 \end{figure}
 
 \subsection{DHT11}
-\tab DHT11 adalah salah satu sensor yang dapat mengukur dua parameter lingkungan sekaligus, yakni suhu dan kelembaban udara. Dalam sensor ini, terdapat sebuah \textit{thermistor} tipe NTC \textit{(Negative Temperature Coefficient)} untuk mengukur suhu, sebuah sensor kelembaban tipe resistif, dan sebuah \textit{microcontroller} 8-bit yang mengolah kedua sensor tersebut dan mengirim hasilnya ke pin \textit{output} dengan format \textit{single-wire bi-directional} (kabel tunggal dua arah). Gambar \ref{figure:pinout-DHT11} menunjukkan pin \textit{output} yang dimiliki oleh DHT11.
+\tab DHT11 adalah salah satu sensor yang dapat mengukur dua parameter lingkungan sekaligus, yakni suhu dan kelembaban udara. Dalam sensor ini, terdapat sebuah \textit{thermistor} tipe NTC \textit{(Negative Temperature Coefficient)} untuk mengukur suhu, sebuah sensor kelembaban tipe resistif, dan sebuah mikrokontroler 8-bit yang mengolah kedua sensor tersebut dan mengirim hasilnya ke pin \textit{output} dengan format \textit{single-wire bi-directional} (kabel tunggal dua arah). Gambar \ref{figure:pinout-DHT11} menunjukkan pin \textit{output} yang dimiliki oleh DHT11.
 
 \begin{figure}[H]
 	\centerline {
@@ -76,10 +76,10 @@ Resistor digunakan sebagai bagian dari rangkaian elektronik dan sirkuit elektron
 \end{figure}
  
 \subsection{LED \textit{Light Bulb}}
-\tab LED \textit{light bulb} atau bohlam LED adalah produk \textit{Light-Emitting Diode} (LED) yang disusun menjadi sebuah bola lampu. Lampu LED memiliki usia pakai dan efisiensi listrik lebih baik daripada lampu pijar, serta jauh lebih efisien daripada lampu neon. LED \textit{light bulb} juga merupakan salah satu komponen yang sering digunakan dalam rangkaian \textit{microcontroller} karena bohlam LED dapat dijadikan sebagai parameter keberhasilan sebuah rangkaian, misalnya pada rangkaian yang menggunakan komponen sensor untuk memberikan \textit{trigger} supaya lampu LED menyala.
+\tab LED \textit{light bulb} atau bohlam LED adalah produk \textit{Light-Emitting Diode} (LED) yang disusun menjadi sebuah bola lampu. Lampu LED memiliki usia pakai dan efisiensi listrik lebih baik daripada lampu pijar, serta jauh lebih efisien daripada lampu neon. LED \textit{light bulb} juga merupakan salah satu komponen yang sering digunakan dalam rangkaian mikrokontroler karena bohlam LED dapat dijadikan sebagai parameter keberhasilan sebuah rangkaian, misalnya pada rangkaian yang menggunakan komponen sensor untuk memberikan \textit{trigger} supaya lampu LED menyala.
 
 \subsection{\textit{Infrared Sensor Module} dan \textit{Infrared Receiver Module}}
-\tab \textit{Infrared sensor module} pendeteksi objek/hambatan adalah komponen elektronik yang memancarkan sinar inframerah untuk mendeteksi atau merasakan beberapa aspek di sekitarnya. Sensor inframerah dapat mengukur suhu suatu objek ataupun mendeteksi gerakan objek. Komponen ini mengeluarkan \textit{output} berupa sinyal digital sehingga mudah digunakan untuk berinteraksi dengan \textit{microcontroller} terkenal seperti Arduino/Genuino UNO, ESP8266, Mega, Leornado, Zero, 101, bahkan Raspberry Pi atau Raspberry Pi Zero.\\
+\tab \textit{Infrared sensor module} pendeteksi objek/hambatan adalah komponen elektronik yang memancarkan sinar inframerah untuk mendeteksi atau merasakan beberapa aspek di sekitarnya. Sensor inframerah dapat mengukur suhu suatu objek ataupun mendeteksi gerakan objek. Komponen ini mengeluarkan \textit{output} berupa sinyal digital sehingga mudah digunakan untuk berinteraksi dengan mikrokontroler terkenal seperti Arduino/Genuino UNO, ESP8266, Mega, Leornado, Zero, 101, bahkan Raspberry Pi atau Raspberry Pi Zero.\\
 
 \begin{figure}[H]
 	\centerline {
@@ -102,6 +102,16 @@ Seperti yang ditunjukkan pada gambar \ref{figure:ir-sensor}, modul ini memiliki 
 	\label{figure:ir-receiver4}
 \end{figure}
 
+\section{Pemrograman Mikrokontroler}
+\tab Ada banyak sekali bahasa pemrograman yang dapat digunakan untuk memprogram suatu mikrokontroler, seperti BASIC, C/C++, atau Assembly (ASM). Arduino sendiri memiliki sebuah perangkat pemrograman bernama Arduino IDE yang dapat digunakan untuk membuat program menggunakan bahasa C yang memang sudah dirancang khusus untuk Arduino. Selain memprogram papan Arduino-nya, kita juga harus memprogram pengendali Arduino-nya menggunakan bahasa pemrograman Python. 
+
+\subsection{Bahasa Pemrograman C dan Python}
+\tab Bahasa pemrograman C adalah bahasa pemrograman tingkat menengah yang bisa digunakan untuk membuat berbagai jenis aplikasi, mulai dari sistem operasi hingga \textit{compiler} untuk bahasa pemrograman lain. Bahasa pemrograman yang dibuat oleh Dennis M. Ritchie pada tahun 1972 ini paling cocok digunakan untuk membangun aplikasi yang berhubungan langsung dengan sistem operasi dan \textit{hardware}. Bahasa pemrograman C inilah yang digunakan untuk memprogram papan Arduino.\\
+\tab Bahasa pemrograman Python adalah bahasa pemrograman tingkat tinggi yang dibuat oleh Guido van Rossum. Python diklaim sebagai bahasa yang menggabungkan kapabilitas, kemampuan, dan sintaksis kode yang sangat jelas dan mudah dibaca manusia sehingga mudah untuk dipelajari. Python mendukung multi-paradigma pemrograman, yakni pemrograman berbasis objek, pemrograman imperatif, dan pemrograman fungsional. Bahasa pemrograman Python banyak dipilih untuk digunakan dalam memprogram pengendalian Arduino karena ada banyak \textit{library} yang mendukung, seperti PySerial.
+
+\subsection{Arduino IDE}
+\tab Arduino IDE atau Arduino \textit{Software} (IDE) adalah sebuah \textit{software open-source} yang memungkinkan pengembang untuk menulis kode program dan mengunggahnya ke papan Arduino. Unit kode yang diunggah dan dijalankan di papan Arduino biasa disebut dengan Sketsa atau \textit{Sketch}. Arduino IDE dapat berjalan di sistem operasi Windows, Linux, maupun Mac OS X dan dapat digunakan bersama papan Arduino jenis apapun. 
+
 \section{Telegram}
 \tab Telegram adalah sebuah aplikasi \textit{messaging} yang fokus pada kecepatan dan keamanan, sederhana, ringan, dan juga gratis. Telegram yang diluncurkan pada Agustus tahun 2013, menjadi salah satu aplikasi \textit{instant messaging} yang banyak digunakan oleh masyarakat di seluruh dunia. Kelebihan Telegram salah satunya adalah adanya landasan untuk menggunakan \textit{Application Programming Interface} (API) untuk
 masyarakat luas.
@@ -111,16 +121,6 @@ masyarakat luas.
 \tab Bot API adalah API yang memungkinkan siapa saja dengan mudah membuat sebuah program yang menggunakan aplikasi Telegram sebagai antarmuka. Bot API memungkinkan siapa saja untuk membuat bot (kependekan dari robot) yang dapat membalas dan melayani semua pengguna yang mengirimkan suatu pesan perintah kepada bot tersebut. \\
 \tab Bot adalah aplikasi pihak ketiga yang dijalankan di dalam Telegram dan dioperasikan oleh perangkat lunak, bukan manusia. Bot dapat melakukan apa saja, seperti mengajari, mencari, \textit{broadcast}, mengingatkan, menghubungkan, dan mengintegrasikan dengan layanan lainnya atau bahkan dapat memberikan perintah ke \textit{Internet of Things}.\\
 \tab Pengguna dapat berinteraksi dengan bot dengan mengirimkan pesan, perintah, dan permintaan. Sedangkan pengembang dapat mengontrol bot yang sedang dikembangkannya melalui \textit{HTTPS Requests} ke bot API Telegram.
-
-\section{Pemrograman \textit{Microcontroller}}
-\tab Ada banyak sekali bahasa pemrograman yang dapat digunakan untuk memprogram suatu \textit{microcontroller}, seperti BASIC, C/C++, atau Assembly (ASM). Arduino sendiri memiliki sebuah perangkat pemrograman bernama Arduino IDE yang dapat digunakan untuk membuat program menggunakan bahasa C yang memang sudah dirancang khusus untuk Arduino. Selain memprogram papan Arduino-nya, kita juga harus memprogram pengendali Arduino-nya menggunakan bahasa pemrograman Python. 
-
-\subsection{Bahasa Pemrograman C dan Python}
-\tab Bahasa pemrograman C adalah bahasa pemrograman tingkat menengah yang bisa digunakan untuk membuat berbagai jenis aplikasi, mulai dari sistem operasi hingga \textit{compiler} untuk bahasa pemrograman lain. Bahasa pemrograman yang dibuat oleh Dennis M. Ritchie pada tahun 1972 ini paling cocok digunakan untuk membangun aplikasi yang berhubungan langsung dengan sistem operasi dan \textit{hardware}. Bahasa pemrograman C inilah yang digunakan untuk memprogram papan Arduino.\\
-\tab Bahasa pemrograman Python adalah bahasa pemrograman tingkat tinggi yang dibuat oleh Guido van Rossum. Python diklaim sebagai bahasa yang menggabungkan kapabilitas, kemampuan, dan sintaksis kode yang sangat jelas dan mudah dibaca manusia sehingga mudah untuk dipelajari. Python mendukung multi-paradigma pemrograman, yakni pemrograman berbasis objek, pemrograman imperatif, dan pemrograman fungsional. Bahasa pemrograman Python banyak dipilih untuk digunakan dalam memprogram pengendalian Arduino karena ada banyak \textit{library} yang mendukung, seperti PySerial.
-
-\subsection{Arduino IDE}
-\tab Arduino IDE atau Arduino \textit{Software} (IDE) adalah sebuah \textit{software open-source} yang memungkinkan pengembang untuk menulis kode program dan mengunggahnya ke papan Arduino. Unit kode yang diunggah dan dijalankan di papan Arduino biasa disebut dengan Sketsa atau \textit{Sketch}. Arduino IDE dapat berjalan di sistem operasi Windows, Linux, maupun Mac OS X dan dapat digunakan bersama papan Arduino jenis apapun. 
 
 \section{WSO2 IoT \textit{Server}}
 \tab WSO2 adalah sebuah teknologi \textit{open-source} untuk bisnis digital yang menyediakan layanan integrasi yang tangkas (\textit{agile}). Ada 3 macam layanan yang ditawarkan, yakni WSO2 \textit{Integration Agile Platform}, \textit{Architecture for Agility}, dan \textit{Methodology for Agility}. Diantara banyak produk yang ditawarkan oleh WSO2, ada salah satu \textit{platform} yang berkaitan dengan \textit{Internet of Things} bernama WSO2 \textit{IoT Server}. WSO2 \textit{IoT Server} (IoTS) menyediakan kapabilitas yang diperlukan untuk mengimplementasikan \textit{platform} IoT di sisi server yang \textit{scalable}.\\
